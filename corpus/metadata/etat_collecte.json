@@ -25,7 +25,8 @@
     "resume": "Document officiel sur obligations, echantillon, variables, pays, valeur statistique, corrections. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Date de publication non determinee (champ vide).",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D02",
@@ -53,7 +54,8 @@
     "resume": "Document officiel sur variables, nomenclatures, nature de transaction, valeur statistique. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: Comment remplir sa réponse à l'enquête mensuelle statistique sur les échanges de biens intra-UE (EMEBI) | Portail de la Direction Générale des Douanes et Droits Indirects La page regroupe aussi NC8/NGP 2022-2025: segmenter chaque millesime avant indexation. Les XLS retenus sont ceux de 2026. Date de publication non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D03",
@@ -81,7 +83,8 @@
     "resume": "Document officiel sur entreprises concernees, selection, obligations. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: Démarche : Répondre à l’enquête statistique sur les échanges de biens au sein de l’Union Européenne (EMEBI) | Portail de la Direction Générale des Douanes et Droits Indirects Date de publication non determinee (champ vide). Date/version documentaire non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D04",
@@ -109,7 +112,8 @@
     "resume": "Document officiel sur distinction emebi et tva, cas pratiques. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: FAQ et tutoriels vidéos - l'enquête statistique sur les échanges de biens intra-UE et l'état récapitulatif TVA | Portail de la Direction Générale des Douanes et Droits Indirects FAQ textuelle archivee; videos liees non telechargees et non transcrites. Date de publication non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D05",
@@ -137,7 +141,8 @@
     "resume": "Document officiel sur echeances mensuelles. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: Calendrier des réponses à l'enquête mensuelle statistique sur les échanges de biens intra-UE (EMEBI) | Portail de la Direction Générale des Douanes et Droits Indirects Plusieurs calendriers historiques sur une meme page; ne pas confondre echeance du depot et mois de reference. Date de publication non determinee (champ vide).",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D06",
@@ -165,7 +170,8 @@
     "resume": "Document officiel sur saisie et corrections emebi et tva. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Fichier remis en ligne sous repertoire 2025-08 mais contenu date 31/01/2022. Millesime et version verifies sur couverture. Date de publication non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D07",
@@ -193,7 +199,8 @@
     "resume": "Document officiel sur format technique xml, controles des variables. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Nom URL v1.3.8 mais couverture v1.3.9 du 24/02/2022: version du contenu retenue. Date de publication non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D08",
@@ -221,7 +228,8 @@
     "resume": "Document officiel sur validation technique des fichiers xml. A utiliser avec le champ geographique et la version indiques.",
     "observations": "XSD syntaxiquement XML valide; validation de fichiers declaratifs contre ce schema non testee. Date de publication non determinee (champ vide). Date/version documentaire non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D09",
@@ -249,7 +257,8 @@
     "resume": "Document officiel sur import et controles debweb2. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Nom URL v5.1.6 mais couverture v5.1.7 du 07/03/2022: version du contenu retenue. Date de publication non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D10",
@@ -277,7 +286,8 @@
     "resume": "Document officiel sur corrections des anciennes deb. Usage historique, ne constitue pas une obligation actuelle.",
     "observations": " Date de publication non determinee (champ vide). Date/version documentaire non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D11",
@@ -305,7 +315,8 @@
     "resume": "Document officiel sur obligation de reponse, secret statistique. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: Loi n° 51-711 du 7 juin 1951 sur l'obligation, la coordination et le secret en matière de statistiques. - Légifrance Autorite: legislateur francais; diffusion SGG/DILA Legifrance. Copie navigateur du texte consolide incluant articles abroges clairement etiquetes. Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D12",
@@ -334,7 +345,8 @@
     "observations": "",
     "selector": "",
     "resultat": "echec",
-    "erreur": "Replis officiels disponibles epuises; import manuel requis"
+    "erreur": "Replis officiels disponibles epuises; import manuel requis",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D13",
@@ -362,7 +374,8 @@
     "resume": "Document officiel sur label, echantillonnage, obligations. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Autorite emettrice: Comite du label de la statistique publique (INSEE); diffusion sur CNIS. Montant 460000 euros decrit la population de cet avis: ne pas en deduire un seuil universel de declaration EMEBI. Date de publication non determinee (champ vide).",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D14",
@@ -390,7 +403,8 @@
     "resume": "Document officiel sur refonte deb, echantillon et production statistique. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Original complet du numero (160 pages), article commerce exterieur commence p. 7 imprimee. Autres articles hors perimetre: filtrer lors du decoupage RAG. Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D15",
@@ -416,9 +430,10 @@
     "priorite_rag": "essentielle",
     "historique_ou_actuel": "actuel",
     "resume": "Document officiel sur cadre ebs, intra-ue et extra-ue, confidentialite. A utiliser avec le champ geographique et la version indiques.",
-    "observations": "Repli HTML EUR-Lex apres echec PDF. ",
+    "observations": "Repli HTML EUR-Lex apres echec PDF.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D16",
@@ -446,7 +461,8 @@
     "resume": "Document officiel sur variables itgs, qualite et echanges microdonnees. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications.  Date de publication non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D17",
@@ -472,10 +488,11 @@
     "priorite_rag": "essentielle",
     "historique_ou_actuel": "actuel",
     "resume": "Informations statistiques a fournir par autorites fiscales et douanieres",
-    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications. ",
+    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications.",
     "selector": "",
     "resultat": "echec",
-    "erreur": "404 Client Error:  for url: https://publications.europa.eu/resource/consolidation/02021R1704-20260510"
+    "erreur": "404 Client Error:  for url: https://publications.europa.eu/resource/consolidation/02021R1704-20260510",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D18",
@@ -501,10 +518,11 @@
     "priorite_rag": "essentielle",
     "historique_ou_actuel": "actuel",
     "resume": "Modification EBS et actes delegues dont 2021/1704",
-    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications. ",
+    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications.",
     "selector": "",
     "resultat": "echec",
-    "erreur": "404 Client Error:  for url: https://publications.europa.eu/resource/oj/L_202600047"
+    "erreur": "404 Client Error:  for url: https://publications.europa.eu/resource/oj/L_202600047",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D19",
@@ -532,7 +550,8 @@
     "resume": "Document officiel sur secret statistique, qualite et diffusion. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Repli HTML EUR-Lex apres echec PDF.  PDF sans texte exploitable; OCR requis (outil non disponible). Copie officielle de diffusion IWEPS du texte EUR-Lex, 26 pages images; identifiant/version verifies visuellement sur p.1. PDF conservé, OCR non produit faute de moteur installe; ne pas indexer sans OCR. Periode d application non explicitee ou non applicable a une documentation non normative. PDF sans texte exploitable; OCR requis (outil non disponible).",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D20",
@@ -560,7 +579,8 @@
     "resume": "Document officiel sur qualite, confidentialite, independance. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D21",
@@ -588,7 +608,8 @@
     "resume": "Document officiel sur methodologie itgs intra-ue et extra-ue, qualite et diffusion. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "KS-01-26-012-EN-N",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D22",
@@ -616,7 +637,8 @@
     "resume": "Document officiel sur methodologie itgs intra-ue et extra-ue, qualite et diffusion. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "KS-01-26-006",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D23",
@@ -644,7 +666,8 @@
     "resume": "Document officiel sur methodologie itgs intra-ue et extra-ue, qualite et diffusion. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "KS-01-26-002",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D24",
@@ -672,7 +695,8 @@
     "resume": "Document officiel sur statistiques par caracteristiques entreprises. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Edition 2025 publiee en 2026, non doublon d un manuel 2026. Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "KS-01-25-068",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D25",
@@ -700,7 +724,8 @@
     "resume": "Document officiel sur monnaie de facturation. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Coquille couverture invoicing country; titre interieur invoicing currency retenu. Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "KS-01-26-003",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D26",
@@ -728,7 +753,8 @@
     "resume": "Document officiel sur couverture intra-ue et extra-ue, revision, confidentialite, qualite. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: International trade in goods - aggregated and detailed data Date de publication non determinee (champ vide). Date/version documentaire non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D27",
@@ -756,7 +782,8 @@
     "resume": "Document officiel sur recommandations itgs, territoire, valorisation et partenaires. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Adoption confirmee par D28 decision 57/108; le fichier acquis reste White Cover et ne doit pas etre presente comme edition editoriale definitive. Date de publication non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D28",
@@ -784,7 +811,8 @@
     "resume": "Document officiel sur decisions commission statistique concernant imts 2026. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D29",
@@ -812,7 +840,8 @@
     "resume": "Document officiel sur base historique internationale itgs. Usage historique, ne constitue pas une obligation actuelle.",
     "observations": "Ancien cadre conceptuel conserve pour interpretation des manuels et comparaisons avec IMTS 2026. Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "non_autorisee_sans_permission"
   },
   {
     "id": "D30",
@@ -840,7 +869,8 @@
     "resume": "Document officiel sur collecte, compilations, qualite et diffusion itgs. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Manuel fonde sur IMTS 2010; ne pas assimiler sa date de fichier PDF a la date de publication. Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "non_autorisee_sans_permission"
   },
   {
     "id": "D31",
@@ -868,7 +898,8 @@
     "resume": "Document officiel sur methodologie historique itgs. Usage historique, ne constitue pas une obligation actuelle.",
     "observations": " Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "pdf",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "non_autorisee_sans_permission"
   },
   {
     "id": "D32",
@@ -896,7 +927,8 @@
     "resume": "Document officiel sur integration statistiques entreprises et commerce de biens. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Contient egalement statistiques de services: conserver seulement chapitres utiles a integration entreprises/commerce de biens. Date de publication non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D33",
@@ -924,7 +956,8 @@
     "resume": "Document officiel sur separation enquete emebi et etat recapitulatif tva. Usage historique, ne constitue pas une obligation actuelle.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: DEB : changements déclaratifs relatifs aux échanges de biens intra-UE à compter du 1er janvier 2022 | Portail de la Direction Générale des Douanes et Droits Indirects Date/version documentaire non determinee (champ vide).",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D34",
@@ -953,7 +986,8 @@
     "observations": "",
     "selector": "",
     "resultat": "echec",
-    "erreur": "Replis officiels disponibles epuises; import manuel requis"
+    "erreur": "Replis officiels disponibles epuises; import manuel requis",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D35",
@@ -982,7 +1016,8 @@
     "observations": "Le navigateur affiche simultanement VERSION EN VIGUEUR et Abroge par ordonnance. Validation juridique des exceptions et de la recodification indispensable; fichier non collecte.",
     "selector": "",
     "resultat": "echec",
-    "erreur": "Replis officiels disponibles epuises; import manuel requis"
+    "erreur": "Replis officiels disponibles epuises; import manuel requis",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D36",
@@ -1011,7 +1046,8 @@
     "observations": "",
     "selector": "",
     "resultat": "echec",
-    "erreur": "Replis officiels disponibles epuises; import manuel requis"
+    "erreur": "Replis officiels disponibles epuises; import manuel requis",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D37",
@@ -1037,9 +1073,10 @@
     "priorite_rag": "essentielle",
     "historique_ou_actuel": "historique",
     "resume": "Document officiel sur ancien cadre statistiques intra-ue. Usage historique, ne constitue pas une obligation actuelle.",
-    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications. ",
+    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D38",
@@ -1065,10 +1102,11 @@
     "priorite_rag": "essentielle",
     "historique_ou_actuel": "historique",
     "resume": "Ancien cadre statistiques extra-UE",
-    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications. ",
+    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications.",
     "selector": "",
     "resultat": "echec",
-    "erreur": "404 Client Error:  for url: https://publications.europa.eu/resource/consolidation/02009R0471-20161223"
+    "erreur": "404 Client Error:  for url: https://publications.europa.eu/resource/consolidation/02009R0471-20161223",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D39",
@@ -1094,10 +1132,11 @@
     "priorite_rag": "essentielle",
     "historique_ou_actuel": "actuel",
     "resume": "NC8 et tarif douanier commun 2026",
-    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications. ",
+    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications.",
     "selector": "",
     "resultat": "echec",
-    "erreur": "Replis officiels disponibles epuises; import manuel requis"
+    "erreur": "Replis officiels disponibles epuises; import manuel requis",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D40",
@@ -1125,7 +1164,8 @@
     "resume": "Document officiel sur codes produits et libelles officiels nc8. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Date de publication non determinee (champ vide).",
     "selector": "2026|officiel",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D41",
@@ -1151,9 +1191,10 @@
     "priorite_rag": "essentielle",
     "historique_ou_actuel": "actuel",
     "resume": "Document officiel sur pays partenaires et codes pays. A utiliser avec le champ geographique et la version indiques.",
-    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications. ",
+    "observations": "Original Office des publications via interface REST Cellar documentee; source https://op.europa.eu/en/web/cellar/cellar-data/publications.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D42",
@@ -1181,7 +1222,8 @@
     "resume": "Document officiel sur pays et territoires partenaires. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "KS-01-26-020",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "autorisee_sous_conditions"
   },
   {
     "id": "D43",
@@ -1209,7 +1251,8 @@
     "resume": "Document officiel sur sources emebi et douane extra-ue, compilation et diffusion. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: Portail des statistiques du commerce extérieur - Concepts et méthodes Date de publication/mise a jour non indiquee: laisser vide, ne pas inferer du millesime de collecte. Date de publication non determinee (champ vide). Date/version documentaire non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D44",
@@ -1237,7 +1280,8 @@
     "resume": "Document officiel sur echantillon, qualite, revisions et diffusion. A utiliser avec le champ geographique et la version indiques.",
     "observations": "Copie HTML nettoyee; original HTTP conserve dans logs/sources. Titre source: Portail des statistiques du commerce extérieur - Concepts et méthodes Texte comporte des estimations historiques de janvier 2022; ne pas les presenter comme mesure de qualite 2026. Date de publication/mise a jour non determinee. Date de publication non determinee (champ vide). Date/version documentaire non determinee (champ vide). Periode d application non explicitee ou non applicable a une documentation non normative.",
     "selector": "",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   },
   {
     "id": "D45",
@@ -1265,6 +1309,7 @@
     "resume": "Document officiel sur referentiel produits complementaire nc8. A utiliser avec le champ geographique et la version indiques.",
     "observations": " Date de publication non determinee (champ vide).",
     "selector": "2026|ngp",
-    "resultat": "valide"
+    "resultat": "valide",
+    "statut_redistribution": "a_verifier"
   }
 ]

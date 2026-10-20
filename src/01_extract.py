@@ -2,6 +2,8 @@ from pathlib import Path
 
 import pymupdf
 
+from extraction_io import parse_arguments, write_output
+
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PDF_PATH = (
@@ -12,10 +14,12 @@ PDF_PATH = (
 )
 
 
-def main() -> None:
-    with pymupdf.open(PDF_PATH) as document:
-        print(f"Fichier : {PDF_PATH.name}")
-        print(f"Nombre total de pages : {document.page_count}")
+def extract_text(pdf_path: Path) -> str:
+    with pymupdf.open(pdf_path) as document:
+        sections = [
+            f"Fichier : {pdf_path.name}",
+            f"Nombre total de pages : {document.page_count}",
+        ]
 
         pages_text = [
             (page_number, page.get_text("text"))
@@ -23,10 +27,20 @@ def main() -> None:
         ]
 
     for page_number, text in pages_text:
-        print("\n" + "=" * 80)
-        print(f"Page {page_number}")
-        print("=" * 80)
-        print(text[:2000])
+        sections.extend(
+            ["\n" + "=" * 80, f"Page {page_number}", "=" * 80, text[:2000]]
+        )
+    return "\n".join(sections) + "\n"
+
+
+def main(argv=None) -> None:
+    parser, arguments = parse_arguments(
+        "Afficher un aperçu textuel d'un PDF.", PDF_PATH, argv
+    )
+    try:
+        write_output(extract_text(arguments.input), arguments)
+    except (OSError, ValueError, pymupdf.FileDataError) as error:
+        parser.error(str(error))
 
 
 if __name__ == "__main__":

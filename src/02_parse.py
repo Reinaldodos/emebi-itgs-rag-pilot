@@ -1,9 +1,12 @@
 import json
 import re
+import sys
 from collections import Counter
 from pathlib import Path
 
 import pymupdf
+
+from extraction_io import parse_arguments, write_output
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -12,12 +15,6 @@ PDF_PATH = (
     / "corpus"
     / "02_union_europeenne"
     / "2019_union_europeenne_reglement_2152_fr.pdf"
-)
-OUTPUT_PATH = (
-    PROJECT_ROOT
-    / "data"
-    / "structured"
-    / "2019_union_europeenne_reglement_2152_fr.json"
 )
 DOCUMENT_ID = "2019_union_europeenne_reglement_2152_fr"
 
@@ -282,6 +279,7 @@ def parse_annexes(lines: list[dict]) -> list[dict]:
 
 
 def build_document(pdf_path: Path = PDF_PATH) -> dict:
+    pdf_path = Path(pdf_path).resolve()
     lines, extraction_report = extract_lines(pdf_path)
     first_annex_index = next(
         index for index, line in enumerate(lines) if ANNEX_RE.fullmatch(line["text"])
@@ -389,7 +387,11 @@ def build_document(pdf_path: Path = PDF_PATH) -> dict:
 
     return {
         "document_id": DOCUMENT_ID,
-        "source_path": str(pdf_path.relative_to(PROJECT_ROOT)),
+        "source_path": str(
+            pdf_path.relative_to(PROJECT_ROOT)
+            if pdf_path.is_relative_to(PROJECT_ROOT)
+            else pdf_path
+        ),
         "page_count": extraction_report["page_count"],
         "normalization": {
             "rules": [
@@ -434,35 +436,21 @@ def representative_articles(document: dict, numbers: set[str]) -> list[dict]:
     ]
 
 
-def main() -> None:
-    document = build_document()
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(
-        json.dumps(document, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
+def main(argv=None) -> None:
+    parser, arguments = parse_arguments(
+        "Structurer le règlement 2019/2152 en JSON.", PDF_PATH, argv
     )
-
+    try:
+        document = build_document(arguments.input)
+        write_output(json.dumps(document, ensure_ascii=False, indent=2) + "\n", arguments)
+    except (OSError, ValueError, pymupdf.FileDataError) as error:
+        parser.error(str(error))
     report = document["parsing_report"]
-    print(f"Fichier écrit : {OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
-    print(f"Chapitres détectés : {report['chapter_count']}")
-    print(f"Articles détectés : {report['article_count']}")
-    print(f"Paragraphes numérotés détectés : {report['numbered_paragraph_count']}")
-    print(f"Annexes détectées : {report['annex_count']}")
     print(
-        "Marqueurs EUR-Lex rencontrés : "
-        + json.dumps(report["eur_lex_marker_counts"], ensure_ascii=False)
-    )
-    print("Structures non reconnues ou différées :")
-    for item in report["unrecognized_or_deferred_structures"]:
-        print(f"- {item}")
-
-    print("\nArticles représentatifs :")
-    print(
-        json.dumps(
-            representative_articles(document, {"1", "15", "25"}),
-            ensure_ascii=False,
-            indent=2,
-        )
+        f"Chapitres : {report['chapter_count']} ; articles : {report['article_count']} ; "
+        f"paragraphes numérotés : {report['numbered_paragraph_count']} ; "
+        f"annexes : {report['annex_count']}",
+        file=sys.stderr,
     )
 
 

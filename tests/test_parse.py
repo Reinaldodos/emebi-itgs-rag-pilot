@@ -1,10 +1,12 @@
 import importlib.util
 import json
+import sys
 import unittest
 from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PROJECT_ROOT / "src"))
 MODULE_PATH = PROJECT_ROOT / "src" / "02_parse.py"
 SPEC = importlib.util.spec_from_file_location("parse_regulation", MODULE_PATH)
 parse_regulation = importlib.util.module_from_spec(SPEC)

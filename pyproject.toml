@@ -1,0 +1,19 @@
+[project]
+name = "emebi-itgs-rag-pilot"
+version = "0.1.0"
+description = "Collecte, extraction et structuration du corpus documentaire EMEBI / ITGS."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "pymupdf>=1.26.0,<2",
+    "requests>=2.32.4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4.0"]
+
+[tool.uv]
+# Les scripts s'exécutent depuis le dépôt et utilisent ses chemins locaux.
+package = false

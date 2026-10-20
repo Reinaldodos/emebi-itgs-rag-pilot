@@ -13,12 +13,20 @@ events=[
  ('D37','https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=CELEX:32004R0638','echec','Navigation navigateur timeout 10 s; recuperation Cellar reussie ensuite'),
  ('D38','https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=CELEX:02009R0471-20161223','echec','Commande navigateur focus timeout 10 s'),
 ]
-path=ROOT/'logs/telechargements.csv'
-with path.open(encoding='utf-8',newline='') as f:
-    existing={(r['id'],r['url'],r['methode']) for r in csv.DictReader(f)}
-with path.open('a',encoding='utf-8',newline='') as f:
-    w=csv.DictWriter(f,fieldnames=LOGFIELDS)
-    for key,url,result,error in events:
-        if (key,url,'navigateur_ordinaire_audit') in existing:continue
-        w.writerow(dict(horodatage=NOW,id=key,passe=3,methode='navigateur_ordinaire_audit',url=url,url_finale='',http='',resultat=result,erreur=error+'; audit a posteriori, heure exacte non conservee',octets='',duree_secondes=''))
-print('Essais navigateur ajoutes au journal sans duplications.')
+
+
+def main() -> None:
+    """Ajouter les essais au journal seulement lors d'un appel explicite."""
+    path=ROOT/'logs/telechargements.csv'
+    with path.open(encoding='utf-8',newline='') as f:
+        existing={(r['id'],r['url'],r['methode']) for r in csv.DictReader(f)}
+    with path.open('a',encoding='utf-8',newline='') as f:
+        w=csv.DictWriter(f,fieldnames=LOGFIELDS)
+        for key,url,result,error in events:
+            if (key,url,'navigateur_ordinaire_audit') in existing:continue
+            w.writerow(dict(horodatage=NOW,id=key,passe=3,methode='navigateur_ordinaire_audit',url=url,url_finale='',http='',resultat=result,erreur=error+'; audit a posteriori, heure exacte non conservee',octets='',duree_secondes=''))
+    print('Essais navigateur ajoutes au journal sans duplications.')
+
+
+if __name__ == "__main__":
+    main()
