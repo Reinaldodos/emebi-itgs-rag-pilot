@@ -1,0 +1,4 @@
+id,titre,organisme,url,date_tentative,motif
+NT001,"Loi n° 51-711 du 7 juin 1951 sur l'obligation, la coordination et le secret en matière de statistiques","Légifrance","https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000888573","2026-10-05","Accès HTTP automatisé refusé (403); référence à récupérer manuellement ou via une API officielle autorisée."
+NT002,"Programme d'enquêtes statistiques 2026 — mention EMEBI","Légifrance","https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000052835965","2026-10-05","Accès HTTP automatisé refusé (403); référence à récupérer manuellement ou via une API officielle autorisée."
+NT003,"Avis de conformité du Comité du label pour l'EMEBI","Cnis","https://www.cnis.fr/wp-content/uploads/2024/10/ac-2024-dgddi-emebi-mensuelle.pdf","2026-10-05","Téléchargement automatisé refusé (403); aucune tentative de contournement effectuée."

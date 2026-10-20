@@ -1,0 +1,49 @@
+# Downloaded source documents and archives
+*.pdf
+*.html
+*.htm
+*.zip
+
+# Local working and generated output directories
+/work/
+/outputs/
+/corpus/logs/
+
+# Extraction results and temporary artifacts
+/runs/
+/tmp/
+*.log
+*.tmp
+
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# JavaScript dependencies and caches
+node_modules/
+.npm/
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Codex and agent-local configuration
+/.agents/
+/.aws/
+/.codex/
