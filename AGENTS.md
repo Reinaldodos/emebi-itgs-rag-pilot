@@ -2,18 +2,17 @@
 
 ## Project Structure & Module Organization
 
-This repository is currently an empty scaffold; no application code, tests, or build configuration have been committed. Keep the root uncluttered as the project develops. Place implementation code under `src/`, automated tests under `tests/`, documentation under `docs/`, and non-code resources under `assets/`. Mirror source paths in the test tree—for example, test `src/services/generator.py` with `tests/services/test_generator.py`. Store only small, necessary assets in Git; keep generated output and local caches ignored.
+Implementation scripts live under `src/`, automated tests under `tests/`, and corpus documentation and metadata under `corpus/`. Keep downloaded documents, generated output, and local caches ignored. The numbered extraction and parsing scripts run directly from the checkout; this is not an installable Python package.
 
 ## Build, Test, and Development Commands
 
-No build or test commands are defined yet. When introducing a language or framework, add its standard manifest and expose a small, documented command set through a `Makefile` or package scripts. Contributors should be able to discover and run common tasks consistently, such as:
+Use Python 3.11 or newer and uv. `pyproject.toml` declares minimum dependency versions; `uv.lock` pins the complete resolution. Python 3.13 is the verified interpreter for this environment.
 
-- `make setup` — install or synchronize development dependencies.
-- `make test` — run the complete automated test suite.
-- `make lint` — run formatting and static-analysis checks.
-- `make run` — start the project locally.
+- `make setup` (or `uv sync --locked`) — synchronize runtime and development dependencies into `.venv/`.
+- `make test` (or `uv run --locked pytest`) — run the automated test suite.
+- `uv run --locked pytest --collect-only` — check test discovery and imports without opening corpus documents.
 
-Update this guide and the project README when these commands become available. Do not document commands that have not been implemented.
+When intentionally updating dependencies, run `uv lock --upgrade`, synchronize, and validate before committing the manifest and lockfile together. PDF validation needs the system `pdfinfo` and `pdftotext` executables; Excel validation needs `libreoffice`. See README for installation and scope. These tools are not Python dependencies.
 
 ## Coding Style & Naming Conventions
 
@@ -21,7 +20,7 @@ Use the formatter and linter standard to the chosen language, commit their confi
 
 ## Testing Guidelines
 
-Every behavior change should include tests. Name tests after the behavior under test and keep fixtures close to the suite that uses them. Cover success paths, invalid inputs, and regressions. Once a framework is selected, document its exact invocation and any coverage threshold here; until then, do not claim a repository-wide coverage target.
+Every behavior change should include tests. Name tests after the behavior under test and keep fixtures close to the suite that uses them. Cover success paths, invalid inputs, and regressions. Run the unittest-based suite through `uv run --locked pytest`; no repository-wide coverage threshold is defined. Parsing tests currently require the local, Git-ignored PDF documented in README, so distinguish import/discovery success from full test execution when it is absent.
 
 ## Commit & Pull Request Guidelines
 
