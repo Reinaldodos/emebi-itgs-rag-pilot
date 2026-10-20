@@ -10,7 +10,7 @@ from corpus_manifest import DOCS, FOLDERS
 
 ROOT = Path(__file__).resolve().parents[1] / 'corpus'
 LOCK = threading.Lock()
-FIELDS = 'id titre organisme niveau type_document theme date_publication date_version statut_juridique periode_application langue url_source url_telechargement date_consultation nom_fichier format nombre_pages sha256 licence_ou_conditions libre_acces priorite_rag historique_ou_actuel resume observations'.split()
+FIELDS = 'id titre organisme niveau type_document theme date_publication date_version statut_juridique periode_application langue url_source url_telechargement date_consultation nom_fichier format nombre_pages sha256 licence_ou_conditions statut_redistribution libre_acces priorite_rag historique_ou_actuel resume observations'.split()
 LOGFIELDS = ['horodatage','id','passe','methode','url','url_finale','http','resultat','erreur','octets','duree_secondes']
 NOW = datetime.now(timezone.utc).date().isoformat()
 
@@ -18,7 +18,25 @@ def init():
     for folder in FOLDERS + ['metadata','logs','logs/sources','logs/textes','logs/controles']:
         (ROOT/folder).mkdir(parents=True, exist_ok=True)
 
+def redistribution_status(conditions):
+    conditions = (conditions or '').strip()
+    if conditions.startswith('Copyright ONU'):
+        return 'non_autorisee_sans_permission'
+    authorized_prefixes = (
+        'CC-BY 4.0',
+        'Licence ouverte Etalab 2.0',
+        'Reproduction partielle autorisee',
+        'Reutilisation autorisee',
+    )
+    if conditions.startswith(authorized_prefixes):
+        return 'autorisee_sous_conditions'
+    return 'a_verifier'
+
 def save(rows):
+    for row in rows:
+        row['statut_redistribution'] = redistribution_status(
+            row.get('licence_ou_conditions')
+        )
     (ROOT/'metadata/etat_collecte.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
     successful = [{k:r.get(k,'') for k in FIELDS} for r in rows if r['resultat']=='valide']
     (ROOT/'metadata/catalogue.json').write_text(json.dumps(successful,ensure_ascii=False,indent=2),encoding='utf-8')

@@ -103,6 +103,9 @@ droits tiers ; les publications ONU peuvent rester tous droits réservés.
 En l'absence de preuve, la mention est « conditions à vérifier ». Valider les
 droits avant redistribution ou mise à disposition publique du POC.
 
+La politique de provenance et la signification des champs de droits sont
+détaillées dans [Provenance et droits des sources](provenance-et-droits.md).
+
 ## Reprise locale
 
 Le collecteur est dans `../src/collect_corpus.py` et nécessite Python, `requests`,
