@@ -1,27 +1,19 @@
-# Downloaded source documents and archives
-*.pdf
-*.html
-*.htm
-*.zip
-
-# Local working and generated output directories
-/work/
-/outputs/
+# Downloaded corpus documents (kept locally, not redistributed)
+/corpus/01_france_emebi/
+/corpus/02_union_europeenne/
+/corpus/03_international_itgs/
+/corpus/04_historique_deb_emebi/
+/corpus/05_nomenclatures_et_referentiels/
 /corpus/logs/
 
-# Extraction results and temporary artifacts
+# Generated extraction and parsing outputs
+/data/
+/outputs/
+/work/
 /runs/
 /tmp/
-*.log
-*.tmp
 
-# R session files
-.Rhistory
-.RData
-.Ruserdata
-.Rproj.user/
-
-# Python environments and caches
+# Python environments, bytecode and test/tool caches
 .venv/
 venv/
 __pycache__/
@@ -29,12 +21,10 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.coverage
+htmlcov/
 
-# JavaScript dependencies and caches
-node_modules/
-.npm/
-
-# Local environment and editor files
+# Local configuration and editor files
 .env
 .env.*
 !.env.example
@@ -43,7 +33,12 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Codex and agent-local configuration
-/.agents/
-/.aws/
-/.codex/
+# R session files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Logs and temporary files
+*.log
+*.tmp

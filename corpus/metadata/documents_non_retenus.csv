@@ -1,0 +1,7 @@
+id,titre,url_source,date_consultation,raison_exclusion
+X01,NC8 2026 libelles autosuffisants,https://www.douane.gouv.fr/sites/default/files/2025-12/08/NC2026_annexe7.xls,2026-10-06,"Libelles simplifies; preferer libelles officiels NC8 D40, pas un texte normatif"
+X02,NGP 2026 libelles autosuffisants,https://www.douane.gouv.fr/sites/default/files/2025-12/15/Ngp%2Bcana2026a%20annexe4.xls,2026-10-06,Preferer referentiel NGP retenu D45; eviter quasi doublon
+X03,NC8 2025 libelles officiels,https://www.douane.gouv.fr/sites/default/files/2024-12/17/NC2025_annexe6.xls,2026-10-06,Millesime remplace par 2026 pour ce POC; lien seulement examine dans D02
+X04,NGP 2025,https://www.douane.gouv.fr/sites/default/files/2024-12/06/Ngp%2Bcana2025%20annexe3_vd.xls,2026-10-06,Millesime anterieur non necessaire a transition de 2022; lien examine dans D02
+X05,Questions frequentes DEBWEB 2020,https://www.douane.gouv.fr/sites/default/files/uploads/files/2020-07/Questions%20fr%C3%A9quentes%20DebWeb%202020.pdf,2026-10-06,"FAQ ancienne DEB, preferee FAQ EMEBI/TVA D04; lien examine dans D33"
+X06,Reglementation sur la reponse EMEBI,https://www.douane.gouv.fr/fiche/reglementation-sur-la-reponse-lenquete-mensuelle-statistique-sur-les-echanges-de-biens-intra,2026-10-06,"Page de presentation redondante avec notice et textes; non telechargee, examinee pendant inventaire"

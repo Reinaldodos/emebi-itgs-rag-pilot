@@ -1,48 +1,45 @@
 # EMEBI / ITGS RAG pilot
 
-Ce dépôt prépare un pilote d'extraction documentaire et de recherche augmentée (RAG) consacré :
+Ce dépôt prépare un pilote reproductible de collecte, d'extraction et de structuration documentaire consacré :
 
 - à l'enquête mensuelle sur les échanges de biens intra-Union européenne (EMEBI) en France ;
-- au cadre européen et international des statistiques du commerce international de biens (ITGS).
+- au cadre européen et international des statistiques du commerce international de biens (ITGS) ;
+- à la préparation ultérieure d'un POC de recherche augmentée (RAG).
 
 ## État du projet
 
-Le projet est actuellement au stade de constitution et de qualification du corpus. Aucun pipeline d'extraction n'est encore implémenté et aucun mini-corpus expérimental n'est encore arrêté.
+Le projet contient actuellement :
 
-Le corpus de travail local comprend 40 documents officiels provenant principalement de la DGDDI, d'EUR-Lex, d'Eurostat et de la Division de statistique des Nations unies.
+- une chaîne Python de collecte, de contrôle et de finalisation du corpus ;
+- une première chaîne d'extraction et de parsing ;
+- des tests automatisés pour la collecte et le parsing ;
+- un catalogue de 37 documents validés parmi 45 candidats qualifiés.
+
+Le prochain travail expérimental portera sur la définition d'un mini-corpus homogène et sur la comparaison contrôlée des méthodes d'extraction. Cette étape n'est pas encore engagée dans l'historique Git.
+
+## Structure
+
+```text
+src/                 collecte, import, contrôle, extraction et parsing
+tests/               tests automatisés
+corpus/README.md     périmètre, méthode de collecte et limites
+corpus/metadata/     catalogue, état de collecte, bilan et exclusions
+corpus/<catégorie>/  documents sources locaux, exclus de Git
+data/                résultats générés, exclus de Git
+```
 
 ## Gestion du corpus
 
-Les documents téléchargés ne sont pas redistribués dans ce dépôt. Les PDF, copies HTML et archives restent dans l'environnement de travail local et sont exclus de Git.
+Les PDF, pages HTML, feuilles Excel et autres documents téléchargés ne sont pas redistribués dans ce dépôt. Ils restent dans l'environnement local et conservent les conditions d'utilisation de leurs producteurs.
 
-Le fichier [`corpus/metadata/catalogue.csv`](corpus/metadata/catalogue.csv) constitue le manifeste de référence. Il décrit notamment, pour chaque document :
+Le fichier [`corpus/metadata/catalogue.csv`](corpus/metadata/catalogue.csv) constitue le manifeste des documents validés. Il conserve notamment leurs identifiants, sources officielles, versions, noms locaux et empreintes SHA-256. Le fichier `etat_collecte.json` conserve l'état des 45 candidats, y compris les échecs.
 
-- son identifiant stable ;
-- son titre et son organisme producteur ;
-- son URL officielle ;
-- son nom de fichier local ;
-- sa version et son statut ;
-- son empreinte SHA-256 ;
-- sa priorité et son caractère actuel ou historique.
+L'accès gratuit à un document ne signifie pas qu'il est placé sous licence ouverte. La licence MIT de ce dépôt couvre uniquement le code et la documentation propres au projet.
 
-L'accès public à un document ne signifie pas automatiquement qu'il est placé sous licence ouverte. Chaque source conserve ses propres conditions d'utilisation et de réutilisation.
+## Documentation du corpus
 
-## Structure versionnée
-
-```text
-corpus/
-  README.md
-  metadata/
-    catalogue.csv
-    documents_non_telecharges.csv
-```
-
-Les répertoires `work/` et `outputs/`, les documents sources et les résultats expérimentaux sont volontairement exclus du dépôt. Un mécanisme unique de reconstitution du corpus remplacera ultérieurement les listes de téléchargement provisoires.
-
-## Reproductibilité
-
-L'empreinte SHA-256 inscrite dans le catalogue permet de vérifier qu'un fichier récupéré correspond exactement au document qualifié lors de la constitution du corpus. Le futur mécanisme de téléchargement devra utiliser le catalogue comme source de vérité et signaler toute indisponibilité ou divergence d'empreinte.
+Le périmètre métier, la méthode de collecte, les contrôles appliqués et les limites connues sont décrits dans [`corpus/README.md`](corpus/README.md). Un bilan détaillé est disponible dans [`corpus/metadata/bilan.md`](corpus/metadata/bilan.md).
 
 ## Licence
 
-Le code et la documentation propres à ce dépôt sont publiés sous licence MIT. Cette licence ne s'applique pas aux documents tiers référencés dans le catalogue.
+Le code et la documentation propres à ce dépôt sont publiés sous licence MIT. Les documents tiers référencés dans le catalogue restent soumis à leurs propres droits.
