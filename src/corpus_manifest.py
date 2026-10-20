@@ -14,7 +14,8 @@ def add(group, year, org, slug, title, source, direct='', fmt='html', theme='', 
         statut_juridique=status, periode_application=period, langue=lang,
         url_source=source, url_telechargement=direct, date_consultation='',
         nom_fichier=f'{FOLDERS[group-1]}/{year}_{org.lower().replace(" ", "_")}_{slug}_{lang}.{fmt}',
-        format=fmt, nombre_pages='', sha256='', licence_ou_conditions='conditions a verifier', libre_acces='',
+        format=fmt, nombre_pages='', sha256='', licence_ou_conditions='conditions a verifier',
+        statut_redistribution='a_verifier', libre_acces='',
         priorite_rag=priority, historique_ou_actuel='historique' if historical else 'actuel',
         resume=theme, observations='', selector=selector, resultat='a_traiter'))
 
